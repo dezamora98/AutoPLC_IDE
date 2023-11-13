@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Iconos">
+        <file>Iconos/cropped-logo-cujae.png</file>
+        <file>Iconos/icons8-online-coding-64.png</file>
+    </qresource>
+</RCC>

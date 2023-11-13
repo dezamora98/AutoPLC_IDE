@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>AutoIDE</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="iconos.qrc">
+    <normaloff>:/Iconos/Iconos/cropped-logo-cujae.png</normaloff>:/Iconos/Iconos/cropped-logo-cujae.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0">
+       <widget class="QTextEdit" name="code_terminal">
+        <property name="minimumSize">
+         <size>
+          <width>600</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>150</height>
+         </size>
+        </property>
+        <property name="html">
+         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="overwriteMode">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>600</width>
+          <height>400</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+        <property name="tabShape">
+         <enum>QTabWidget::Rounded</enum>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="documentMode">
+         <bool>true</bool>
+        </property>
+        <property name="tabsClosable">
+         <bool>true</bool>
+        </property>
+        <property name="movable">
+         <bool>true</bool>
+        </property>
+        <property name="tabBarAutoHide">
+         <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="widget">
+         <attribute name="icon">
+          <iconset resource="iconos.qrc">
+           <normaloff>:/Iconos/Iconos/icons8-online-coding-64.png</normaloff>:/Iconos/Iconos/icons8-online-coding-64.png</iconset>
+         </attribute>
+         <attribute name="title">
+          <string>AutoIDE</string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="icon">
+          <iconset resource="iconos.qrc">
+           <normaloff>:/Iconos/Iconos/icons8-online-coding-64.png</normaloff>:/Iconos/Iconos/icons8-online-coding-64.png</iconset>
+         </attribute>
+         <attribute name="title">
+          <string notr="true">Tab 2</string>
+         </attribute>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>828</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionAdrir_proyecto"/>
+    <addaction name="actionNuevo"/>
+    <addaction name="actionNuevo_proyecto"/>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionGuardar_como"/>
+    <addaction name="actionCerrar_todo"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuHerramientas">
+    <property name="title">
+     <string>Herramientas</string>
+    </property>
+    <addaction name="actionCompilar"/>
+    <addaction name="actionGrabar"/>
+    <addaction name="actionXC8"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="actionSobre_AutoUSB_KIT"/>
+    <addaction name="actionSobre_AutoPLC"/>
+    <addaction name="actionAutoIDE"/>
+    <addaction name="actionQt"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuHerramientas"/>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAbrir"/>
+   <addaction name="actionNuevo"/>
+   <addaction name="actionGuardar"/>
+   <addaction name="actionCompilar"/>
+   <addaction name="actionGrabar"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+  </action>
+  <action name="actionNuevo">
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+  </action>
+  <action name="actionGuardar_como">
+   <property name="text">
+    <string>Guardar como</string>
+   </property>
+  </action>
+  <action name="actionCerrar_todo">
+   <property name="text">
+    <string>Cerrar todo</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionEstado">
+   <property name="text">
+    <string>Estado</string>
+   </property>
+  </action>
+  <action name="actionE_S_Digitales">
+   <property name="text">
+    <string>E/S Digitales</string>
+   </property>
+  </action>
+  <action name="actionE_S_Anal_gicas">
+   <property name="text">
+    <string>E/S Analógicas</string>
+   </property>
+  </action>
+  <action name="actionMODBUS">
+   <property name="text">
+    <string>MODBUS</string>
+   </property>
+  </action>
+  <action name="actionUSB">
+   <property name="text">
+    <string>USB</string>
+   </property>
+  </action>
+  <action name="actionCompilar">
+   <property name="text">
+    <string>Compilar</string>
+   </property>
+  </action>
+  <action name="actionGrabar">
+   <property name="text">
+    <string>Grabar</string>
+   </property>
+  </action>
+  <action name="actionSobre_AutoUSB_KIT">
+   <property name="text">
+    <string>AutoUSB-KIT</string>
+   </property>
+  </action>
+  <action name="actionSobre_AutoPLC">
+   <property name="text">
+    <string>AutoPLC</string>
+   </property>
+  </action>
+  <action name="actionAutoIDE">
+   <property name="text">
+    <string>AutoIDE</string>
+   </property>
+  </action>
+  <action name="actionNuevo_proyecto">
+   <property name="text">
+    <string>Nuevo proyecto</string>
+   </property>
+  </action>
+  <action name="actionXC8">
+   <property name="text">
+    <string>XC8</string>
+   </property>
+  </action>
+  <action name="actionAdrir_proyecto">
+   <property name="text">
+    <string>Adrir proyecto</string>
+   </property>
+  </action>
+  <action name="actionQt">
+   <property name="text">
+    <string>Qt</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="iconos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

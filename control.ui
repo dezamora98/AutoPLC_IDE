@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>control</class>
+ <widget class="QWidget" name="control">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>628</width>
+    <height>370</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Salidas Analógicas</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>AO1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>AO2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>AO4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QSlider" name="analog_out_slider_4">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>AO3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QSlider" name="analog_out_slider_3">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QSlider" name="analog_out_slider_2">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QSlider" name="analog_out_slider_1">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QSpinBox" name="analog_spinbox_1"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QSpinBox" name="analog_spinbox_2"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSpinBox" name="analog_spinbox_3"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="QSpinBox" name="analog_spinbox_4"/>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Entradas Analógicas</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="2" rowspan="2">
+        <widget class="QProgressBar" name="digital_in_5">
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="11">
+        <widget class="QRadioButton" name="radioButton_16">
+         <property name="text">
+          <string>V</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="8">
+        <widget class="QRadioButton" name="radioButton_15">
+         <property name="text">
+          <string>I</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="8">
+        <widget class="QRadioButton" name="radioButton_14">
+         <property name="text">
+          <string>V</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="6" rowspan="2">
+        <widget class="QProgressBar" name="digital_in_6">
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="5">
+        <widget class="QRadioButton" name="radioButton_7">
+         <property name="text">
+          <string>V</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="8">
+        <widget class="QRadioButton" name="radioButton_9">
+         <property name="text">
+          <string>V</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="6" rowspan="2">
+        <widget class="QProgressBar" name="digital_in_2">
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" rowspan="2">
+        <widget class="QLabel" name="label_7">
+         <property name="text">
+          <string>AI1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="12" rowspan="2">
+        <widget class="QProgressBar" name="digital_in_7">
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QRadioButton" name="radioButton_2">
+         <property name="text">
+          <string>V</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="QRadioButton" name="radioButton_8">
+         <property name="text">
+          <string>I</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QRadioButton" name="radioButton_4">
+         <property name="text">
+          <string>I</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QRadioButton" name="radioButton_6">
+         <property name="text">
+          <string>I</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2" rowspan="2">
+        <widget class="QProgressBar" name="digital_in_1">
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QRadioButton" name="radioButton_5">
+         <property name="text">
+          <string>V</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="11">
+        <widget class="QRadioButton" name="radioButton_12">
+         <property name="text">
+          <string>I</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="7" rowspan="2">
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>AI3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="11">
+        <widget class="QRadioButton" name="radioButton_13">
+         <property name="text">
+          <string>V</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="11">
+        <widget class="QRadioButton" name="radioButton_10">
+         <property name="text">
+          <string>I</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QRadioButton" name="radioButton">
+         <property name="text">
+          <string>I</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="12" rowspan="2">
+        <widget class="QProgressBar" name="digital_in_3">
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="9" rowspan="2">
+        <widget class="QProgressBar" name="digital_in_8">
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="9" rowspan="2">
+        <widget class="QProgressBar" name="digital_in_4">
+         <property name="value">
+          <number>0</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QRadioButton" name="radioButton_3">
+         <property name="text">
+          <string>V</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="8">
+        <widget class="QRadioButton" name="radioButton_11">
+         <property name="text">
+          <string>I</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="10" rowspan="2">
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>AI4</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3" rowspan="2" colspan="2">
+        <widget class="QLabel" name="label_8">
+         <property name="text">
+          <string>AI2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" rowspan="2">
+        <widget class="QLabel" name="label_11">
+         <property name="text">
+          <string>AI5</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3" rowspan="2" colspan="2">
+        <widget class="QLabel" name="label_12">
+         <property name="text">
+          <string>AI6</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="7" rowspan="2">
+        <widget class="QLabel" name="label_13">
+         <property name="text">
+          <string>AI7</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="10" rowspan="2">
+        <widget class="QLabel" name="label_14">
+         <property name="text">
+          <string>AI8</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_digital_out">
+       <property name="text">
+        <string>Salidas Digitales</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="digital_out_1">
+       <property name="text">
+        <string>DO1</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="digital_out_2">
+       <property name="text">
+        <string>DO2</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="digital_out_3">
+       <property name="text">
+        <string>DO3</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="digital_out_4">
+       <property name="text">
+        <string>DO4</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="digital_out_5">
+       <property name="text">
+        <string>DO5</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="digital_out_6">
+       <property name="text">
+        <string>DO6</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="digital_out_7">
+       <property name="text">
+        <string>DO7</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="digital_out_8">
+       <property name="text">
+        <string>DO8</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_digital_out_2">
+       <property name="text">
+        <string>Entradas Digitales</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="digital_out_9">
+       <property name="text">
+        <string>DI1</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="digital_out_10">
+       <property name="text">
+        <string>DI2</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="digital_out_11">
+       <property name="text">
+        <string>DI3</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="digital_out_12">
+       <property name="text">
+        <string>DI4</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="digital_out_13">
+       <property name="text">
+        <string>DI5</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="digital_out_14">
+       <property name="text">
+        <string>DI6</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="digital_out_15">
+       <property name="text">
+        <string>DI7</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="digital_out_16">
+       <property name="text">
+        <string>DI8</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>analog_spinbox_1</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>analog_out_slider_1</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>181</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>analog_out_slider_1</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>analog_spinbox_1</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>52</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>64</x>
+     <y>51</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>analog_spinbox_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>analog_out_slider_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>78</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>206</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>analog_out_slider_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>analog_spinbox_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>254</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>56</x>
+     <y>79</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>analog_spinbox_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>analog_out_slider_3</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>49</x>
+     <y>106</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>192</x>
+     <y>110</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>analog_out_slider_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>analog_spinbox_3</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>272</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>70</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>analog_spinbox_4</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>analog_out_slider_4</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>136</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>analog_out_slider_4</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>analog_spinbox_4</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>246</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>64</x>
+     <y>136</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
